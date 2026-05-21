@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 130" width="240" height="130">
+  <g fill="none" stroke="#0a1628" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="58,98 82,38 104,72"/>
+    <polyline points="76,98 104,22 138,98"/>
+  </g>
+  <text x="72" y="114" font-family="Georgia,serif" font-size="20" font-weight="bold" fill="#0a1628" letter-spacing="4">KAMTARY</text>
+  <text x="82" y="126" font-family="Georgia,serif" font-size="8" fill="#0a1628" letter-spacing="5">PROPERTY</text>
+</svg>

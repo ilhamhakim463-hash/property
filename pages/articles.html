@@ -1,0 +1,233 @@
+Berikut adalah seluruh kode untuk file **`articles.html`** yang sudah diperbarui dengan link sosial media dan nomor WhatsApp yang baru pada bagian *footer*, kontak teks, ikon sosial, serta tombol melayang (*floating button*):
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel & Insight – Kamtary Property</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-inner"><div class="loader-logo">KAMTARY</div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div></div>
+<div class="reading-progress" id="readingProgress"></div>
+<div class="lang-bar" style="position:fixed;top:0;left:0;right:0;z-index:1001;">
+  <div class="container"><button class="lang-btn active" data-lang="id">ID</button><span class="lang-separator">|</span><button class="lang-btn" data-lang="en">EN</button></div>
+</div>
+<nav class="navbar scrolled" id="navbar" style="top:32px;">
+  <div class="container"><div class="nav-inner">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/logo.svg" alt="Kamtary">
+      <div class="logo-text"><span class="logo-name">KAMTARY</span><span class="logo-sub">Property</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Beranda</a></li>
+      <li><a href="properties.html">Properti</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="articles.html" style="color:var(--gold)">Artikel</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+      <li><a href="contact.html" class="nav-cta">Konsultasi Gratis</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><button class="mobile-close" id="mobileClose">✕</button><ul class="nav-links"><li><a href="../index.html">Beranda</a></li><li><a href="properties.html">Properti</a></li><li><a href="about.html">Tentang</a></li><li><a href="articles.html">Artikel</a></li><li><a href="contact.html">Kontak</a></li></ul></div>
+
+<div class="page-header">
+  <img class="page-header-bg" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80" alt="Articles">
+  <div class="page-header-overlay"></div>
+  <div class="container">
+    <div class="page-header-content">
+      <div class="breadcrumb"><a href="../index.html">Beranda</a><span>/</span><span>Artikel</span></div>
+      <h1 class="page-title">Insight & <em style="font-style:italic;color:var(--gold)">Analisis</em></h1>
+    </div>
+  </div>
+</div>
+
+<section style="padding:80px 0 120px;">
+  <div class="container">
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:60px;" class="reveal">
+      <button class="filter-btn active" style="background:transparent;border:1px solid var(--border);color:var(--gray);padding:8px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:var(--font-body);transition:all 0.2s;" onclick="setActive(this)">Semua</button>
+      <button class="filter-btn" style="background:transparent;border:1px solid var(--border);color:var(--gray);padding:8px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:var(--font-body);transition:all 0.2s;" onclick="setActive(this)">Analisis Investasi</button>
+      <button class="filter-btn" style="background:transparent;border:1px solid var(--border);color:var(--gray);padding:8px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:var(--font-body);transition:all 0.2s;" onclick="setActive(this)">Tren Pasar</button>
+      <button class="filter-btn" style="background:transparent;border:1px solid var(--border);color:var(--gray);padding:8px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:var(--font-body);transition:all 0.2s;" onclick="setActive(this)">Arsitektur</button>
+      <button class="filter-btn" style="background:transparent;border:1px solid var(--border);color:var(--gray);padding:8px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:var(--font-body);transition:all 0.2s;" onclick="setActive(this)">Tips Properti</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:0;margin-bottom:2px;border:1px solid var(--border);overflow:hidden;" class="reveal">
+      <div style="position:relative;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=900&q=80" alt="" style="width:100%;height:100%;object-fit:cover;min-height:400px;transition:transform 0.7s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;top:20px;left:20px;background:var(--gold);color:var(--navy);font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;font-weight:700;">FEATURED</div>
+      </div>
+      <div style="background:var(--navy-mid);padding:52px 40px;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">📊 Analisis Investasi</div>
+        <h2 style="font-family:var(--font-display);font-size:28px;font-weight:400;color:var(--white);margin-bottom:16px;line-height:1.3;">Outlook Properti Premium Indonesia 2025: Peluang di Tengah Ketidakpastian Global</h2>
+        <p style="font-size:14px;color:var(--gray);line-height:1.9;margin-bottom:28px;">Pasar properti premium Indonesia menunjukkan resiliensi luar biasa di tengah volatilitas global. Laporan eksklusif Kamtary Research Institute mengungkap 5 area investasi terpanas dan strategi optimal untuk investor 2025.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid var(--border);">
+          <div style="font-size:11px;color:var(--gray);">15 Januari 2025 · 12 menit baca</div>
+          <a href="article-detail.html" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);text-decoration:none;">Baca →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="articles-grid" style="margin-top:24px;">
+
+      <div class="article-card reveal">
+        <div class="article-img-wrap">
+          <img class="article-img" src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=80" alt="">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">📈 Tren Pasar</div>
+          <h3 class="article-title">Mengapa Seminyak Adalah Pilihan Investasi Terbaik di Bali 2025</h3>
+          <p class="article-excerpt">Kawasan Seminyak mencatat kenaikan harga properti rata-rata 18% per tahun, melampaui rata-rata nasional. Apa yang mendorong pertumbuhan ini?</p>
+          <div class="article-meta">
+            <span class="article-date">20 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal reveal-delay-1">
+        <div class="article-img-wrap">
+          <img class="article-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">🏛️ Arsitektur</div>
+          <h3 class="article-title">Tren Arsitektur Rumah Mewah 2025: Dari Biophilic Design ke Smart Home</h3>
+          <p class="article-excerpt">Para arsitek terkemuka dunia memperkenalkan konsep hunian yang menyeimbangkan teknologi canggih dengan kedekatan alam.</p>
+          <div class="article-meta">
+            <span class="article-date">18 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal reveal-delay-2">
+        <div class="article-img-wrap">
+          <img class="article-img" src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&q=80" alt="">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">💰 Tips Properti</div>
+          <h3 class="article-title">5 Kesalahan Fatal Investor Pemula dalam Membeli Properti Mewah</h3>
+          <p class="article-excerpt">Berdasarkan pengalaman 15 tahun, tim Kamtary Property merangkum kesalahan paling umum dan cara menghindarinya.</p>
+          <div class="article-meta">
+            <span class="article-date">15 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal">
+        <div class="article-img-wrap">
+          <img class="article-img" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">📊 Analisis Investasi</div>
+          <h3 class="article-title">ROI Properti Bandung vs Jakarta: Mana yang Lebih Menguntungkan?</h3>
+          <p class="article-excerpt">Analisis mendalam perbandingan return on investment properti di dua kota besar Indonesia berdasarkan data 5 tahun terakhir.</p>
+          <div class="article-meta">
+            <span class="article-date">12 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal reveal-delay-1">
+        <div class="article-img-wrap">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">🌊 Destinasi</div>
+          <h3 class="article-title">Lombok: The Next Bali? Peluang Investasi Properti di NTB</h3>
+          <p class="article-excerpt">Dengan infrastruktur yang terus berkembang dan keindahan alam yang belum banyak terjamah, Lombok menjadi incaran investor cerdas.</p>
+          <div class="article-meta">
+            <span class="article-date">10 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card reveal reveal-delay-2">
+        <div class="article-img-wrap">
+          <img class="article-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="">
+        </div>
+        <div class="article-body">
+          <div class="article-tag">📋 Regulasi</div>
+          <h3 class="article-title">Panduan Lengkap: WNA Beli Properti di Indonesia 2025</h3>
+          <p class="article-excerpt">Regulasi terbaru yang memungkinkan warga negara asing memiliki properti di Indonesia beserta persyaratan dan prosedur lengkapnya.</p>
+          <div class="article-meta">
+            <span class="article-date">8 Jan 2025</span>
+            <a href="article-detail.html" class="article-read">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:60px;" class="reveal">
+      <button class="btn-secondary" style="cursor:pointer;font-family:var(--font-body);">
+        Muat Lebih Banyak / Load More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section" style="padding:80px 0;">
+  <div class="container">
+    <div class="cta-content reveal">
+      <h2 class="cta-title">Dapatkan <em>Insight Properti</em> Terbaru</h2>
+      <p class="cta-desc">Subscribe newsletter Kamtary Property dan dapatkan laporan pasar eksklusif langsung di inbox Anda.</p>
+      <div style="display:flex;max-width:480px;margin:0 auto;gap:0;border:1px solid var(--border);">
+        <input type="email" placeholder="Email Anda / Your Email" style="flex:1;background:rgba(255,255,255,0.05);border:none;color:var(--white);padding:16px 20px;font-family:var(--font-body);font-size:14px;outline:none;">
+        <button onclick="alert('Terima kasih! Anda akan menerima newsletter kami.')" style="background:var(--gold);color:var(--navy);border:none;padding:16px 28px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;cursor:pointer;font-family:var(--font-body);white-space:nowrap;">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo" style="margin-bottom:20px;display:inline-flex;">
+          <img src="../assets/images/logo.svg" alt="" style="height:44px;filter:brightness(0) invert(1);">
+          <div class="logo-text"><span class="logo-name">KAMTARY</span><span class="logo-sub">Property</span></div>
+        </a>
+        <p>Platform properti enterprise terpercaya Indonesia.</p>
+        <div class="footer-socials" style="display:flex;gap:12px;">
+          <a href="https://www.instagram.com/rf.kmtary/#" target="_blank" class="social-link"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          
+          <a href="https://www.youtube.com/@Kamtary17" target="_blank" class="social-link" style="color:var(--gray); transition:var(--transition-fast);"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gray)'"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Properti</h4><ul class="footer-links"><li><a href="properties.html">Villa Mewah</a></li><li><a href="properties.html">Penthouse</a></li></ul></div>
+      <div class="footer-col"><h4>Perusahaan</h4><ul class="footer-links"><li><a href="about.html">Tentang Kami</a></li><li><a href="articles.html">Artikel</a></li><li><a href="contact.html">Kontak</a></li></ul></div>
+      <div class="footer-col footer-contact"><h4>Kontak</h4><p>📍 Jl. Sudirman Kav. 52-53, Jakarta Selatan</p><p>📱 <a href="https://wa.me/6283179035230">+62 831 7903 5230</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Kamtary Property. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/6283179035230?text=Halo%20Kamtary%20Property%2C%20saya%20ingin%20berkonsultasi." class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="../js/main.js"></script>
+<script>
+function setActive(btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.style.borderColor = 'rgba(201,168,76,0.25)';
+    b.style.color = '#8899b4';
+    b.style.background = 'transparent';
+  });
+  btn.style.borderColor = 'var(--gold)';
+  btn.style.color = 'var(--gold)';
+  btn.style.background = 'rgba(201,168,76,0.1)';
+}
+</script>
+</body>
+</html>
+
+```
